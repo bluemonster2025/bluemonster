@@ -1,8 +1,8 @@
 import { LPTemplate } from "@/components/templates/LPTemplate";
 
 export const metadata = {
-  title: "Site Estático com Components",
-  description: "Next.js + TailwindCSS Exportável",
+  title: "Blue Monster",
+  description: "",
 };
 
 export default function Home() {
