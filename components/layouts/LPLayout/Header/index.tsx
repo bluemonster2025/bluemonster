@@ -27,7 +27,7 @@ export default function Header() {
         <div className="md:pt-4 lg:pt-0 flex items-end lg:items-center justify-center lg:justify-between">
           <Link
             href="/"
-            className="relative w-40 h-8"
+            className="relative w-51 h-9"
             onClick={() => setHash("")}
           >
             <Image

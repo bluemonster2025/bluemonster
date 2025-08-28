@@ -1,11 +1,18 @@
+"use client";
+
 import { Section } from "@/components/elements/Section";
 import Image from "next/image";
 import { Title, TextHighlight } from "@/components/elements/Texts";
+// import { ButtonPrimary } from "@/components/elements/Button";
+import ModalForm from "../ModalForm";
+import { useState } from "react";
 import { ButtonPrimary } from "@/components/elements/Button";
 
 export default function Hero() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Section className="mb-20 bg-grayscale-50 pt-16 md:pt-0 mb-[12rem] md:mb-[4rem] max-h-[30rem] md:h-full">
+    <Section className="mb-20 bg-grayscale-50 pt-16 md:pt-0 mb-[12rem] md:mb-[4rem] max-h-[33rem] md:max-h-[30rem] 3xl:max-h-[40rem] md:h-full">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-5">
         <div className="flex flex-col justify-center text-left gap-8">
           <Title
@@ -33,9 +40,11 @@ export default function Hero() {
           </Title>
 
           <div className="w-full md:w-80">
-            <ButtonPrimary href="/contato" target="_blank">
+            <ButtonPrimary onClick={() => setIsOpen(true)}>
               Solicite um orçamento para o seu projeto
             </ButtonPrimary>
+
+            <ModalForm isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
         </div>
 
