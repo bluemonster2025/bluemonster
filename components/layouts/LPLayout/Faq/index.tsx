@@ -53,7 +53,7 @@ export const FAQ = ({ data, tagH }: IFaq) => {
     index === questOpened ? setQuestOpened(undefined) : setQuestOpened(index);
 
   return (
-    <Section id="faq" className="py-20">
+    <Section id="faq" className="pt-14 pb-0 lg:py-20">
       <Title
         as={tagH}
         className="text-2xl font-semibold mb-8 text-grayscale-400"
@@ -61,7 +61,7 @@ export const FAQ = ({ data, tagH }: IFaq) => {
         Perguntas frequentes
       </Title>
 
-      <div className="flex justify-between pb-24 lg:pb-0">
+      <div className="flex justify-between pb-0">
         <div className="w-full mb-20 md:mb-0">
           {data.map((question, index) => {
             return (

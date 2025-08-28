@@ -20,11 +20,11 @@ export default function Modalities() {
         Modalidades
       </Title>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <div className="flex items-center gap-8 relative">
-          <div className="bg-grayscale-100 rounded-md relative w-[280px] h-[456px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+        <div className="flex items-end md:items-center gap-5 lg:gap-8 relative">
+          <div className="bg-grayscale-100 rounded-md relative h-[456px]">
             <div className="absolute top-7 -left-56 transform translate-x-[60%] w-120">
-              <ul className="text-grayscale-400 list-disc text-[40px]/[56px]">
+              <ul className="text-grayscale-400 list-disc text-[32px]/[56px] lg:text-[40px]/[56px]">
                 <li>
                   <Text className="text-grayscale-400 font-semibold ">
                     {current.title}
@@ -36,7 +36,11 @@ export default function Modalities() {
             <ul className="list-disc space-y-3 mt-28 text-grayscale-300 text-sm text-left font-semibold pl-8">
               {others.map((tab) => (
                 <li key={tab.id}>
-                  <button type="button" onClick={() => setActive(tab.id)}>
+                  <button
+                    className="w-[9rem] text-left"
+                    type="button"
+                    onClick={() => setActive(tab.id)}
+                  >
                     <Text>{tab.title}</Text>
                   </button>
                 </li>
@@ -49,7 +53,7 @@ export default function Modalities() {
           </Text>
         </div>
 
-        <div className="flex justify-center md:justify-end">
+        <div className="hidden lg:flex flex justify-center lg:justify-end">
           <div className="relative w-[560px] h-[320px]">
             <Image
               src={current.image}

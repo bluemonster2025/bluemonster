@@ -5,19 +5,20 @@ import { steps } from "./content";
 
 export default function ProcessSteps() {
   return (
-    <section id="processo" className="py-20">
+    <section id="processo" className="py-14 lg:py-20">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-2xl font-semibold mb-10 text-grayscale-400">
           Processo de desenvolvimento de Web Sites
         </h2>
 
-        <div className="space-y-4">
+        {/* ---------- DESKTOP: mantém exatamente como antes ---------- */}
+        <div className="hidden md:block space-y-4">
           {steps.map((step, index) => (
             <div
               key={index}
               className="grid grid-cols-1 md:grid-cols-4 items-start"
             >
-              <div className="border border-grayscale-100 p-4 py-15">
+              <div className="border border-grayscale-100 p-4 h-full flex flex-col justify-center">
                 <div>{step.icon}</div>
                 <div className="mt-2">
                   <Title
@@ -37,9 +38,7 @@ export default function ProcessSteps() {
                   <div
                     key={lineIndex}
                     className="flex flex-wrap gap-3"
-                    style={{
-                      transform: `translateX(${lineIndex * 3}rem)`,
-                    }}
+                    style={{ transform: `translateX(${lineIndex * 3}rem)` }} // escadinha
                   >
                     {line.map((item: string, i: number) => (
                       <Text
@@ -51,6 +50,67 @@ export default function ProcessSteps() {
                     ))}
                   </div>
                 ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ---------- MOBILE: cada linha é scrollable X com 2 "páginas" (esquerda, direita) ---------- */}
+        <div className="md:hidden space-y-4">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              /* wrapper que permite scroll horizontal com snap */
+              className="overflow-x-auto snap-x snap-mandatory -mx-6 px-6"
+              style={{ WebkitOverflowScrolling: "touch" }}
+            >
+              {/* largura total = 2 páginas (cada .panel tem min-w-full) */}
+              <div className="flex min-w-full">
+                {/* --- Página 1: coluna esquerda (ícone / título / descrição) --- */}
+                <div className="min-w-full snap-start p-0">
+                  <div className="border border-grayscale-100 p-4 h-full flex flex-col justify-center">
+                    <div className="flex items-start gap-3">
+                      <div className="shrink-0">{step.icon}</div>
+                      <div>
+                        <Title
+                          as="h3"
+                          className="text-sm/[24px] font-semibold text-grayscale-400"
+                        >
+                          {step.title}
+                        </Title>
+                        <Text className="text-xs/[24px] text-grayscale-300">
+                          {step.description}
+                        </Text>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* --- Página 2: coluna direita (bolhas em escadinha) --- */}
+                <div className="min-w-full snap-start p-0">
+                  <div className="border border-grayscale-100 rounded-lg p-4">
+                    <div className="flex flex-col gap-4">
+                      {step.items.map((line: string[], lineIndex: number) => (
+                        <div
+                          key={lineIndex}
+                          className="flex flex-wrap gap-3"
+                          style={{
+                            transform: `translateX(${lineIndex * 3}rem)`,
+                          }} // escadinha no mobile também
+                        >
+                          {line.map((item: string, i: number) => (
+                            <Text
+                              key={i}
+                              className="px-4 py-2 bg-grayscale-100 rounded-full text-xs text-grayscale-300"
+                            >
+                              {item}
+                            </Text>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

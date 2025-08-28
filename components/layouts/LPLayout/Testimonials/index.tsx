@@ -12,20 +12,22 @@ export default function Testimonials() {
           Nossos clientes nos recomendam
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[64rem] m-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[64rem] m-auto gap-14 md:gap-4">
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 flex flex-col items-center text-center max-w-[318px] max-h-[251px] m-auto"
+              className="bg-white p-6 flex flex-col items-center text-center relative h-full m-auto"
             >
-              <div className="w-28 h-28 relative rounded-full overflow-hidden shadow-md -mt-16 mb-4">
+              <div className="w-[180px] h-[180px] relative -mt-16 mb-4">
                 <Image
                   src={item.image}
                   alt={item.name}
-                  fill
-                  className="object-cover"
+                  width={180}
+                  height={180}
+                  className="object-cover object-center rounded-full"
                 />
               </div>
+
               <Text className="text-lg font-semibold text-grayscale-400">
                 {item.name}
               </Text>

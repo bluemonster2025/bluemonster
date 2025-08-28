@@ -13,7 +13,7 @@ export default function Header() {
 
   useEffect(() => {
     const updateHash = () => setHash(window.location.hash);
-    updateHash(); // pega hash inicial
+    updateHash();
     window.addEventListener("hashchange", updateHash);
     return () => window.removeEventListener("hashchange", updateHash);
   }, []);
@@ -23,13 +23,12 @@ export default function Header() {
       asTag="header"
       className="w-full h-[96px] lg:h-[88px] flex items-center z-50 bg-white"
     >
-      <div className="flex justify-between w-full">
-        {/* Logo */}
+      <div className="flex justify-center md:justify-between w-full">
         <div className="md:pt-4 lg:pt-0 flex items-end lg:items-center justify-center lg:justify-between">
           <Link
             href="/"
             className="relative w-40 h-8"
-            onClick={() => setHash("")} // força hash vazio ao clicar no logo
+            onClick={() => setHash("")}
           >
             <Image
               fill
@@ -48,13 +47,10 @@ export default function Header() {
             let isActive = false;
 
             if (href === "/") {
-              // Home ativo apenas quando pathname é "/" e sem hash
               isActive = pathname === "/" && hash === "";
             } else if (anchor) {
-              // links de âncora ativos quando pathname bate e hash bate
               isActive = pathname === base && hash === `#${anchor}`;
             } else {
-              // links normais ativos quando pathname bate
               isActive = pathname === base;
             }
 
@@ -69,7 +65,7 @@ export default function Header() {
                     setHash(`#${anchor}`); // âncoras
                   }
                 }}
-                className={`${
+                className={`hidden md:block ${
                   isActive ? "font-bold" : "font-normal"
                 } text-grayscale-400`}
               >

@@ -6,8 +6,8 @@ import { Section } from "@/components/elements/Section";
 export default function DigitalSolutions() {
   return (
     <>
-      <Section id="solucoes-digitais" className="w-full pt-17 pb-25">
-        <div className="flex lg:justify-between items-center gap-36">
+      <Section id="solucoes-digitais" className="w-full py-8 lg:pt-17 lg:pb-25">
+        <div className="flex flex-col-reverse lg:flex-row  lg:justify-between items-center gap-7 lg:gap-36">
           <div className="lg:max-w-[525px]">
             <Title
               as="h2"
@@ -27,10 +27,10 @@ export default function DigitalSolutions() {
             </Text>
           </div>
           <div>
-            <Title className="font-bold text-[50px] text-grayscale-400">
+            <Title className="font-bold text-[38px]/normal lg:text-[50px] text-grayscale-400">
               Soluções digitais <TextHighlight>exclusivas</TextHighlight> para o
             </Title>
-            <Title className="font-bold text-[50px] text-grayscale-400">
+            <Title className="font-bold text-[38px]/normal lg:text-[50px] text-grayscale-400">
               seu negócio.
             </Title>
           </div>
