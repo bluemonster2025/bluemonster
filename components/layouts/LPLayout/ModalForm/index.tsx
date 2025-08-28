@@ -11,8 +11,8 @@ export default function ModalForm({ isOpen, setIsOpen }: ModalFormProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#000000b0] bg-opacity-40 flex items-center justify-center z-50">
-      <div className="bg-white w-full max-w-[653px] rounded-lg p-6 relative">
+    <div className="fixed inset-0 bg-[#000000b0] bg-opacity-40 flex items-center justify-center z-50 px-4">
+      <div className="bg-white w-full max-w-[653px] rounded-lg p-6 relative max-h-[90vh] overflow-y-auto">
         <button
           onClick={() => setIsOpen(false)}
           className="absolute top-3 right-5 text-gray-400 hover:text-gray-600"
