@@ -3,16 +3,21 @@
 @theme {
   /* Grayscale */
   --color-grayscale-500: #201d25;
+  --color-grayscale-450: #1e1e1e;
   --color-grayscale-400: #272934;
   --color-grayscale-300: #747474;
   --color-grayscale-200: #7c8797;
   --color-grayscale-100: #efefff;
+  --color-grayscale-150: #f9f9f9;
   --color-grayscale-50: #f2f5f8;
 
   /* Purplescale */
   --color-purplescale-200: #565ae0;
   --color-purplescale-100: #7c8797;
   --color-purplescale-50: #687af6;
+
+  /* Bluescale */
+  --color-bluescale-50: #c1d4e4;
 
   /* Breakpoints */
   --breakpoint-sm: 640px;

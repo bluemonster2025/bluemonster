@@ -5,63 +5,82 @@ import Image from "next/image";
 import { tabs } from "./content";
 import { Section } from "@/components/elements/Section";
 import { Title, Text } from "@/components/elements/Texts";
+import ListCards from "../ListCards";
+import { WhatsAppButton } from "@/components/elements/WhatsAppButton";
 
 export default function Modalities() {
-  const [active, setActive] = useState("landing");
-  const current = tabs.find((t) => t.id === active)!;
-  const others = tabs.filter((t) => t.id !== active);
+  const [activeTab, setActiveTab] = useState("ecommerce");
+
+  const currentTab = tabs.find((tab) => tab.id === activeTab)!;
 
   return (
-    <Section className="pb-8">
+    <Section id="modalidades" className="pb-20">
       <Title
         as="h2"
-        className="text-grayscale-400 text-[24px]/[32px] font-semibold mb-12"
+        className="text-grayscale-400 text-[24px]/[32px] font-semibold mb-8"
       >
         Modalidades
       </Title>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
-        <div className="flex items-end md:items-center gap-5 lg:gap-8 relative">
-          <div className="bg-grayscale-100 rounded-md relative h-[456px]">
-            <div className="absolute top-7 -left-56 transform translate-x-[60%] w-120">
-              <ul className="text-grayscale-400 list-disc text-[32px]/[56px] lg:text-[40px]/[56px]">
-                <li>
-                  <Text className="text-grayscale-400 font-semibold ">
-                    {current.title}
-                  </Text>
-                </li>
-              </ul>
-            </div>
+      {/* Tabs */}
+      <div className="flex gap-20 bg-grayscale-150 p-4 justify-center text-grayscale-450 text-sm">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            className={`${activeTab === tab.id ? "font-bold" : "font-normal"}`}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
 
-            <ul className="list-disc space-y-3 mt-28 text-grayscale-300 text-sm text-left font-semibold pl-8">
-              {others.map((tab) => (
-                <li key={tab.id}>
-                  <button
-                    className="w-[9rem] text-left"
-                    type="button"
-                    onClick={() => setActive(tab.id)}
-                  >
-                    <Text>{tab.title}</Text>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* Content */}
+      <div className="mt-6">
+        <Text className="text-grayscale-300 text-sm whitespace-pre-line">
+          {currentTab.descriptionStart}{" "}
+          <span className="font-bold">{currentTab.highlightWord}</span>{" "}
+          {currentTab.descriptionEnd}
+          {currentTab.extra}
+        </Text>
 
-          <Text className="text-grayscale-300 text-sm/[24px] max-w-[340px] mt-2">
-            {current.description}
-          </Text>
+        <div className="my-8 relative pt-[50%]">
+          <Image
+            src={currentTab.image}
+            alt={currentTab.label}
+            fill
+            className="rounded-xl shadow"
+          />
         </div>
 
-        <div className="hidden lg:flex flex justify-center lg:justify-end">
-          <div className="relative w-[560px] h-[320px]">
-            <Image
-              src={current.image}
-              alt={current.title}
-              fill
-              className="object-contain"
-              priority
-            />
+        <div className="flex flex-col gap-4 mb-6">
+          {" "}
+          <Title as="h3" className="text-2xl font-semibold text-grayscale-400">
+            Ideal para
+          </Title>
+          <Text className="text-grayscale-300 text-sm">{currentTab.ideal}</Text>
+        </div>
+
+        <div className="flex flex-wrap gap-2 mb-15">
+          {currentTab.idealFor.map((item) => (
+            <Text
+              key={item}
+              className="px-3 py-1 border border-bluescale-50 text-sm rounded-sm text-grayscale-300"
+            >
+              {item}
+            </Text>
+          ))}
+        </div>
+        <div className="flex flex-col gap-8">
+          <Title as="h3" className="text-2xl font-semibold text-grayscale-400">
+            {currentTab.benefitsTitle}
+          </Title>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <ListCards listCards={currentTab.benefits} />
+          </div>
+          <div className="w-full md:w-[360px]">
+            {" "}
+            <WhatsAppButton title="Solicite um orçamento para o seu projeto" />
           </div>
         </div>
       </div>

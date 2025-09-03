@@ -53,7 +53,7 @@ export const FAQ = ({ data, tagH }: IFaq) => {
     index === questOpened ? setQuestOpened(undefined) : setQuestOpened(index);
 
   return (
-    <Section id="faq" className="pt-14 pb-0 lg:py-20">
+    <Section id="faq" className="pb-0 lg:pb-18 lg:pt-9 bg-grayscale-150">
       <Title
         as={tagH}
         className="text-2xl font-semibold mb-8 text-grayscale-400"

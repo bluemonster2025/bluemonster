@@ -54,7 +54,7 @@ export const Footer = () => {
       </Section>
       <Section>
         <Text className="text-center lg:text-left py-4 md:py-8 text-sm/[24px] text-grayscale-400 w-full h-full font-normal">
-          ©2025 Todos os direitos reservados kmonster.com.br
+          ©2025 Todos os direitos reservados bluemonster.com.br
         </Text>
       </Section>
     </>

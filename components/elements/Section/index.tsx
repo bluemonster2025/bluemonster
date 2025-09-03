@@ -35,7 +35,7 @@ export const Section = ({
           </Title>
         ) : null}
         {subtitle ? (
-          <Title className="text-base font-semibold text-grayscale-600 normal-case">
+          <Title className="text-base/[24px] text-grayscale-300 normal-case mb-10">
             {subtitle}
           </Title>
         ) : null}

@@ -1,9 +1,9 @@
 import * as Fa from "react-icons/fa";
-import * as Fi from "react-icons/fi";
+import * as Bs from "react-icons/bs";
 
 export const AllIcons = {
   ...Fa,
-  ...Fi,
+  ...Bs,
 };
 
 interface IconProps {

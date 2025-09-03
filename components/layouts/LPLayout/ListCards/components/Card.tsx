@@ -13,7 +13,7 @@ export const Cards = ({ icon, title, description }: CardProps) => {
       >
         {title}
       </Title>
-      <Text className="text-xs/[24px] font-normal text-grayscale-300 mb-4">
+      <Text className="text-sm/[24px] font-normal text-grayscale-300 mb-4">
         {description}
       </Text>
     </div>
