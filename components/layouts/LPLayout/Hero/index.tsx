@@ -32,14 +32,16 @@ export default function Hero() {
             </div>
 
             <div className="md:hidden mb-0 text-center">
-              Experiências&nbsp;<TextHighlight>digitais</TextHighlight>
+              Aumente suas&nbsp;<TextHighlight>vendas&nbsp;</TextHighlight>
             </div>
 
             <div className="md:hidden mb-0 text-center">
-              que&nbsp;<TextHighlight>cabem </TextHighlight>&nbsp;no seu
+              com um site&nbsp;<TextHighlight>exclusivo&nbsp;</TextHighlight>
             </div>
 
-            <div className="md:hidden mb-0 text-center">bolso!</div>
+            <div className="md:hidden mb-0 text-center">
+              para o seu negócio.
+            </div>
           </Title>
 
           <div className="w-full md:w-[230px]">

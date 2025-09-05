@@ -117,7 +117,7 @@ export default function PromoModal() {
             {/* Botão de fechar */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-5 right-3 text-white text-[40px] z-10"
+              className="absolute top-4 right-3 text-white text-[40px] z-10"
             >
               ×
             </button>
