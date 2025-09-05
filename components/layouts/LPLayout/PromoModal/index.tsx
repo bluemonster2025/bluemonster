@@ -28,7 +28,7 @@ export default function PromoModal() {
           onClick={() => setIsOpen(false)} // fecha ao clicar no fundo
         >
           <div
-            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row h-[75%]"
+            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[70%] 2xl:h-[55%] 3xl:h-[50%]"
             onClick={(e) => e.stopPropagation()} // impede fechar ao clicar dentro
           >
             {/* Botão de fechar */}
