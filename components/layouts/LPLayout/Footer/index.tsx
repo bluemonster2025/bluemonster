@@ -14,7 +14,7 @@ export const Footer = () => {
           <Link href="/" className="relative w-45 h-12 flex">
             <Image
               fill
-              alt="Routeasy"
+              alt="Bluemonster"
               src="/images/logos/logo-branco.svg"
               style={{ objectFit: "contain" }}
             />

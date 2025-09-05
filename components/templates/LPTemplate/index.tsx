@@ -12,12 +12,12 @@ import Modalities from "@/components/layouts/LPLayout/Modalities";
 import { Text } from "@/components/elements/Texts";
 import ProcessDevelopment from "@/components/layouts/LPLayout/ProcessDevelopment";
 import ListCardsWithPagination from "@/components/layouts/LPLayout/ListCardsWithPagination";
-// import PromoModal from "@/components/layouts/LPLayout/PromoModal";
+import PromoModal from "@/components/layouts/LPLayout/PromoModal";
 
 export function LPTemplate() {
   return (
     <>
-      {/* <PromoModal /> */}
+      <PromoModal />
       <Hero />
       <Section
         className="pb-18"
