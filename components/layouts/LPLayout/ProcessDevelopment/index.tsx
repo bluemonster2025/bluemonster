@@ -1,20 +1,47 @@
+"use client";
+
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 import { Text, Title } from "@/components/elements/Texts";
 import { steps } from "./content";
 import { Section } from "@/components/elements/Section";
 
 export default function ProcessDevelopment() {
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    loop: false,
+    mode: "snap",
+    slides: {
+      perView: 1.25,
+    },
+    breakpoints: {
+      "(min-width: 768px)": {
+        slides: { perView: 2.25 },
+      },
+    },
+  });
+
   return (
     <Section id="processo" className="pb-18 lg:pb-9">
       <Title
         as="h2"
-        className="text-2xl font-semibold mb-10 text-grayscale-400"
+        className="hidden lg:block text-2xl font-semibold mb-10 text-grayscale-400"
       >
         Processo de desenvolvimento de Web Sites
       </Title>
 
-      <div className="grid grid-cols-1 md:grid-cols-4">
+      <Title
+        as="h2"
+        className="block lg:block text-2xl font-semibold mb-10 text-grayscale-400"
+      >
+        Processo de desenvolvimento
+      </Title>
+
+      <div ref={sliderRef} className="keen-slider">
         {steps.map((step) => (
-          <div key={step.id} className="border border-grayscale-100">
+          <div
+            key={step.id}
+            className="keen-slider__slide border border-grayscale-100"
+          >
             {/* Cabeçalho */}
             <div className="p-4 flex flex-col items-start gap-3 mb-4 border-b border-grayscale-100 min-h-[140px]">
               <div className="w-10 h-10 rounded-full bg-purplescale-50 flex items-center justify-center">

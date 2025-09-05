@@ -2,13 +2,14 @@
 
 @theme {
   /* Grayscale */
+  --color-grayscale-600: #171717;
   --color-grayscale-500: #201d25;
   --color-grayscale-450: #1e1e1e;
   --color-grayscale-400: #272934;
   --color-grayscale-300: #747474;
   --color-grayscale-200: #7c8797;
-  --color-grayscale-100: #efefff;
   --color-grayscale-150: #f9f9f9;
+  --color-grayscale-100: #efefff;
   --color-grayscale-50: #f2f5f8;
 
   /* Purplescale */

@@ -1,16 +1,10 @@
 "use client";
 
-import { ReactNode } from "react";
 import { Cards } from "./components/Card";
-
-type CardItem = {
-  icon: ReactNode;
-  title: string;
-  description: string;
-};
+import { CardProps } from "./types";
 
 interface Props {
-  listCards?: CardItem[];
+  listCards?: CardProps[];
 }
 
 export default function ListCards({ listCards = [] }: Props) {

@@ -11,6 +11,7 @@ import {
 import Modalities from "@/components/layouts/LPLayout/Modalities";
 import { Text } from "@/components/elements/Texts";
 import ProcessDevelopment from "@/components/layouts/LPLayout/ProcessDevelopment";
+import ListCardsWithPagination from "@/components/layouts/LPLayout/ListCardsWithPagination";
 // import PromoModal from "@/components/layouts/LPLayout/PromoModal";
 
 export function LPTemplate() {
@@ -34,8 +35,11 @@ export function LPTemplate() {
       <Modalities />
       <FeaturedFrame />
       <Section className="pb-18" id="servicos" title="Nossos serviços">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <div className="hidden lg:grid lg:grid-cols-3 gap-4 mt-4">
           <ListCards listCards={listCardsServices} />
+        </div>
+        <div className="block lg:hidden">
+          <ListCardsWithPagination listCards={listCardsServices} />
         </div>
       </Section>
       <ProcessDevelopment />
