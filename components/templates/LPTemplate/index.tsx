@@ -1,3 +1,5 @@
+"use client";
+
 import { Section } from "@/components/elements/Section";
 import { FAQ } from "@/components/layouts/LPLayout/Faq";
 import { faqList } from "@/components/layouts/LPLayout/Faq/content";

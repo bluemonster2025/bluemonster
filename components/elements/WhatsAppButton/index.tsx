@@ -1,11 +1,12 @@
 import Icon from "@/components/elements/Icon";
-import { ButtonPrimary } from "../Button";
+import { ButtonPrimary, ButtonSecondary } from "../Button";
 
 interface Props {
   title: string;
+  variant?: "primary" | "secondary";
 }
 
-export const WhatsAppButton = ({ title }: Props) => {
+export const WhatsAppButton = ({ title, variant = "primary" }: Props) => {
   const whatsappNumber = "5519991729065";
   const message = "Olá! Quero mais informações sobre a BlueMonster!";
 
@@ -16,12 +17,19 @@ export const WhatsAppButton = ({ title }: Props) => {
     window.open(whatsappUrl, "_blank");
   };
 
-  return (
+  return variant === "primary" ? (
     <ButtonPrimary type="button" onClick={handleClick}>
       <div className="flex gap-4">
-        <Icon name="BsWhatsapp" size={20} />
-        {title}
+        {" "}
+        <Icon name="BsWhatsapp" size={20} /> {title}{" "}
       </div>
     </ButtonPrimary>
+  ) : (
+    <ButtonSecondary type="button" onClick={handleClick}>
+      <div className="flex gap-4">
+        {" "}
+        <Icon name="BsWhatsapp" size={20} /> {title}{" "}
+      </div>
+    </ButtonSecondary>
   );
 };

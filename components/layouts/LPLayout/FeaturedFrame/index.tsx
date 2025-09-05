@@ -1,5 +1,5 @@
-import { ButtonSecondary } from "@/components/elements/Button";
 import { Title, Text } from "@/components/elements/Texts";
+import { WhatsAppButton } from "@/components/elements/WhatsAppButton";
 
 export default function FeaturedFrame() {
   return (
@@ -19,12 +19,11 @@ export default function FeaturedFrame() {
           </Text>
         </div>
 
-        <div className="w-[285px] m-auto">
-          <ButtonSecondary>
-            <Text className="text-sm/[24px] font-semibold">
-              Comece seu projeto agora mesmo
-            </Text>
-          </ButtonSecondary>
+        <div className="w-full md:w-[340px] mx-auto">
+          <WhatsAppButton
+            title="Começe seu projeto agora mesmo"
+            variant="secondary"
+          />
         </div>
       </div>
     </div>

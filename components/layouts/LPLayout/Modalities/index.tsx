@@ -212,7 +212,10 @@ export default function Modalities() {
             <ListCards listCards={currentTab.benefits} />
           </div>
           <div className="w-full md:w-[360px]">
-            <WhatsAppButton title="Solicite um orçamento para o seu projeto" />
+            <WhatsAppButton
+              title="Solicite um orçamento para o seu projeto"
+              variant="primary"
+            />
           </div>
         </div>
       </div>

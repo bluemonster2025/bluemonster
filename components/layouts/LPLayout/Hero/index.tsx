@@ -51,7 +51,7 @@ export default function Hero() {
 
             <ModalForm isOpen={isOpen} setIsOpen={setIsOpen} /> */}
 
-            <WhatsAppButton title="Solicite um orçamento" />
+            <WhatsAppButton title="Solicite um orçamento" variant="primary" />
           </div>
         </div>
 

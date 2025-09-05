@@ -87,7 +87,10 @@ export default function PromoModal() {
                 </Text>
               </div>
               <div className="w-full md:w-[230px] mt-4">
-                <WhatsAppButton title="Solicite um orçamento" />
+                <WhatsAppButton
+                  title="Solicite um orçamento"
+                  variant="primary"
+                />
               </div>
             </div>
 
@@ -169,7 +172,10 @@ export default function PromoModal() {
                 </div>
               </div>
               <div className="w-full mt-4 px-8">
-                <WhatsAppButton title="Solicite um orçamento" />
+                <WhatsAppButton
+                  title="Solicite um orçamento"
+                  variant="primary"
+                />
               </div>
             </div>
 

@@ -19,13 +19,13 @@ export const Footer = () => {
               style={{ objectFit: "contain" }}
             />
           </Link>
-          <div className="grid gap-1 grid-cols-2">
-            <LinkExternal
+          <div className="grid gap-1 grid-cols-1">
+            {/* <LinkExternal
               className="h-10 w-10 flex items-center justify-center rounded bg-white"
               href="/"
             >
               <Icon name="FaLinkedinIn" color="#687af6" size={16} />
-            </LinkExternal>
+            </LinkExternal> */}
             <LinkExternal
               className="h-10 w-10 flex items-center justify-center rounded bg-white"
               href="/"
