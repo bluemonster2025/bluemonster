@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center text-left gap-8">
           <Title
             as="h1"
-            className="text-grayscale-400 font-bold text-[32px]/[normal] md:text-[25px] lg:text-[40px] lg:pb-5"
+            className="text-grayscale-400 font-bold text-[32px]/[normal] md:text-[25px] lg:text-[36px] xl:text-[40px] 3xl:text-[56px] lg:pb-5"
           >
             <div className="hidden md:flex justify-start mb-0">
               Aumente suas&nbsp;<TextHighlight>vendas&nbsp;</TextHighlight>com

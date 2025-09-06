@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const WhatsAppButton = ({ title, variant = "primary" }: Props) => {
-  const whatsappNumber = "5519991729065";
+  const whatsappNumber = "5511915260039";
   const message = "Olá! Quero mais informações sobre a BlueMonster!";
 
   const handleClick = () => {

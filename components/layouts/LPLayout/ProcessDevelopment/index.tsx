@@ -55,7 +55,7 @@ export default function ProcessDevelopment() {
       {/* DESKTOP → Grid */}
       <div className="hidden lg:grid grid-cols-4">
         {steps.map((step) => (
-          <div key={step.id} className="border border-grayscale-100 rounded-lg">
+          <div key={step.id} className="border border-grayscale-100">
             <StepCard step={step} />
           </div>
         ))}
@@ -68,11 +68,11 @@ function StepCard({ step }: { step: (typeof steps)[0] }) {
   return (
     <>
       {/* Cabeçalho */}
-      <div className="p-4 flex flex-col items-start gap-3 mb-4 border-b border-grayscale-100 min-h-[140px]">
+      <div className="pl-4 py-4 flex flex-col items-start gap-6 mb-4 border-b border-grayscale-100 min-h-[165px]">
         <div className="w-10 h-10 rounded-full bg-purplescale-50 flex items-center justify-center">
           <Text className="text-white font-semibold text-base">{step.id}</Text>
         </div>
-        <div>
+        <div className="flex flex-col gap-4">
           <Title as="h3" className="font-semibold text-grayscale-400 text-sm">
             {step.title}
           </Title>

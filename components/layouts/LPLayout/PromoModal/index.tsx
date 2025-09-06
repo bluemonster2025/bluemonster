@@ -28,7 +28,7 @@ export default function PromoModal() {
           onClick={() => setIsOpen(false)} // fecha ao clicar no fundo
         >
           <div
-            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[70%] 2xl:h-[55%] 3xl:h-[50%]"
+            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[33%] xl:h-[67%] 2xl:h-[60%] 3xl:h-[50%] 4xl:h-[36%]"
             onClick={(e) => e.stopPropagation()} // impede fechar ao clicar dentro
           >
             {/* Botão de fechar */}
@@ -120,14 +120,14 @@ export default function PromoModal() {
             {/* Botão de fechar */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-3 text-white text-[40px] z-10"
+              className="absolute top-10 right-3 text-white text-[40px] z-10"
             >
               ×
             </button>
 
             {/* Parte Esquerda (Imagem de Fundo 1) */}
             <div
-              className="w-full h-1/2 text-white p-8 flex flex-col justify-start relative bg-cover bg-center"
+              className="w-full h-1/2 text-white pt-20 flex flex-col justify-center relative bg-cover bg-center"
               style={{
                 backgroundImage:
                   "url('/images/pictures/bg-popup-mobile-blue.png')",
