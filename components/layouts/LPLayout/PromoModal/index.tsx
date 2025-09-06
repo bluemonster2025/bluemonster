@@ -117,7 +117,7 @@ export default function PromoModal() {
             className="relative w-full h-screen overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Button de fechar */}
+            {/* Botão de fechar */}
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-10 right-3 text-white text-[40px] z-10"
