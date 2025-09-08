@@ -109,16 +109,14 @@ export default function PromoModal() {
       </div>
 
       <div className="block lg:hidden">
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
-          {/* Container do popup ocupando 100% */}
-          <div className="relative w-full h-full">
-            {/* Imagem de fundo ocupando toda a tela */}
+        <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+          <div className="relative w-[90%] max-w-sm">
+            {/* Imagem de fundo */}
             <Image
-              src="/images/pictures/Pop-Up mobile.png" // coloque sua imagem na pasta public/
+              src="/images/pictures/Pop-Up mobile.png" // coloque a imagem em public/
               alt="Promoção"
-              fill
-              className="object-fill z-0"
-              priority
+              width={400}
+              height={800}
             />
 
             {/* Botão Fechar */}
