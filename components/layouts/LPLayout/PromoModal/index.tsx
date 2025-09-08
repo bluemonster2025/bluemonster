@@ -129,7 +129,7 @@ export default function PromoModal() {
               ×
             </button>
 
-            {/* Button WhatsApp */}
+            {/* Botão WhatsApp */}
             <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-full px-8 z-[20]">
               <WhatsAppButton title="Solicite um orçamento" variant="primary" />
             </div>
