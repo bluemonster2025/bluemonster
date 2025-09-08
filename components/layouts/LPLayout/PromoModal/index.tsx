@@ -109,86 +109,29 @@ export default function PromoModal() {
       </div>
 
       <div className="block lg:hidden">
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-          onClick={() => setIsOpen(false)}
-        >
-          <div
-            className="relative w-full h-screen overflow-hidden flex flex-col"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Button de fechar */}
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+          {/* Container do popup ocupando 100% */}
+          <div className="relative w-full h-full">
+            {/* Imagem de fundo ocupando toda a tela */}
+            <Image
+              src="/images/pictures/Pop-Up mobile.png" // coloque sua imagem na pasta public/
+              alt="Promoção"
+              fill
+              className="object-fill z-0"
+              priority
+            />
+
+            {/* Botão Fechar */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-10 right-3 text-white text-[40px] z-10"
+              className="absolute top-3 right-3 text-white text-[40px] z-[20]"
             >
               ×
             </button>
 
-            {/* Parte Esquerda (Imagem de Fundo 1) */}
-            <div
-              className="w-full h-1/2 text-white pt-20 flex flex-col justify-center relative bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url('/images/pictures/bg-popup-mobile-blue.png')",
-              }}
-            >
-              <div className="max-w-[20rem] mx-auto z-30 text-center">
-                <Title
-                  as="h2"
-                  className={`text-[221px]/[185px] font-extrabold ${bebas_neue.className}`}
-                >
-                  30%
-                </Title>
-
-                <Text
-                  className={`text-[41px]/[34px] uppercase ${bebas_neue.className}`}
-                >
-                  de desconto
-                </Text>
-              </div>
-            </div>
-
-            {/* Parte Direita (Imagem de Fundo 2) */}
-            <div
-              className="w-full h-1/2 flex flex-col justify-end text-center relative bg-cover bg-center pb-8"
-              style={{
-                backgroundImage:
-                  "url('/images/pictures/bg-popup-mobile-white.png')",
-              }}
-            >
-              <div
-                className={`text-[57px]/[50px] ${bebas_neue.className} z-30`}
-              >
-                <Title as="h2" className="mb-2 uppercase">
-                  Não <TextHighlight>perca </TextHighlight>essa
-                </Title>
-                <TextHighlight>Chance!</TextHighlight>
-                <div className="text-grayscale-300 text-[15px]/[27px] mt-2">
-                  <Text>
-                    <strong>A hora é agora! </strong>Garanta seu site antes
-                  </Text>
-                  <Text>que a promoção acabe.</Text>
-                </div>
-              </div>
-              <div className="w-full mt-4 px-8">
-                <WhatsAppButton
-                  title="Solicite um orçamento"
-                  variant="primary"
-                />
-              </div>
-            </div>
-
-            {/* Mascote responsivo */}
-            <div className="absolute top-[48%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-              <Image
-                src="/images/pictures/monster-popup.png"
-                alt="Bluemonster"
-                width={342}
-                height={342}
-                priority
-                className="w-[120vw] max-w-[342px] h-auto"
-              />
+            {/* Botão WhatsApp */}
+            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-full px-8 z-[20]">
+              <WhatsAppButton title="Solicite um orçamento" variant="primary" />
             </div>
           </div>
         </div>
