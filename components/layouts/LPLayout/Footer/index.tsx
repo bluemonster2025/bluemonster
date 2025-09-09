@@ -29,6 +29,7 @@ export const Footer = () => {
             <LinkExternal
               className="h-10 w-10 flex items-center justify-center rounded bg-white"
               href="https://www.instagram.com/bluemonster.com.br"
+              aria-label="Instagram da Blue Monster"
             >
               <Icon name="FaInstagram" color="#687af6" size={16} />
             </LinkExternal>

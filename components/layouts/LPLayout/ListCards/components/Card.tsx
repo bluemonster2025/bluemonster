@@ -8,7 +8,7 @@ export const Cards = ({ icon, title, description }: CardProps) => {
     <div className="border border-grayscale-100 p-4 h-full flex flex-col gap-2 rounded-md">
       <div className="mb-2">{icon}</div>
       <Title
-        as="h4"
+        as="h3"
         className="normal-case text-grayscale-400 font-semibold text-sm/[24px]"
       >
         {title}
