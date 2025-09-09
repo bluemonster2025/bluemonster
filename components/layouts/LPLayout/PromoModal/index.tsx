@@ -108,32 +108,35 @@ export default function PromoModal() {
         </div>
       </div>
 
+      {/* MOBILE */}
       <div className="block lg:hidden">
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
           <div className="relative w-[85%] max-w-sm">
             {/* Imagem de fundo responsiva */}
-            <div className="relative w-full">
+            <div className="relative w-full h-[640px]">
               <Image
                 src="/images/pictures/Pop-Up mobile.png"
                 alt="Promoção"
-                width={2000} // dimensões reais da imagem
-                height={3925}
-                style={{ width: "100%", height: "auto" }} // mantém proporção
+                fill
+                style={{ objectFit: "contain" }}
                 priority
               />
-            </div>
 
-            {/* Botão Fechar */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-3 right-3 text-white text-[40px] z-[20]"
-            >
-              ×
-            </button>
+              {/* Botão Fechar */}
+              <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-3 right-3 text-white text-[40px] z-20"
+              >
+                ×
+              </button>
 
-            {/* Botão WhatsApp */}
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-full px-8 z-[20]">
-              <WhatsAppButton title="Solicite um orçamento" variant="primary" />
+              {/* Botão WhatsApp */}
+              <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 w-[80%]">
+                <WhatsAppButton
+                  title="Solicite um orçamento"
+                  variant="primary"
+                />
+              </div>
             </div>
           </div>
         </div>
