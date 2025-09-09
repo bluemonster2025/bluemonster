@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "critters": "^0.0.25",
     "keen-slider": "^6.8.6",
     "next": "15.3.3",
     "react": "^19.0.0",
