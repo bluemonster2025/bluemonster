@@ -145,7 +145,7 @@ export default function Modalities() {
             {/* Corpo da tela */}
             <div
               ref={frameRef}
-              className="relative h-[520px] rounded-[30px] border-x-[1rem] border-grayscale-600 overflow-hidden shadow-xl"
+              className="relative h-[290px] md:h-[530px] lg:h-[520px] rounded-[30px] border-x-[1rem] border-grayscale-600 overflow-hidden shadow-xl"
             >
               {/* Tela com scroll */}
               <div
