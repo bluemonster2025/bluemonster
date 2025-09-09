@@ -27,6 +27,7 @@ const FaqItem = ({ title, answer, isOpen, onClick, isLast }: IFaqItemProps) => {
           height="24"
           src={`/images/icons/icon-${isOpen ? "minus" : "plus"}.svg`}
           alt="Pergunta icone"
+          priority
         />
       </header>
 

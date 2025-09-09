@@ -35,6 +35,7 @@ export default function Header() {
               alt="Blue Monster"
               src="/images/logos/logo.svg"
               style={{ objectFit: "contain" }}
+              priority
             />
           </Link>
         </div>

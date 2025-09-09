@@ -171,6 +171,7 @@ export default function Modalities() {
                     pointerEvents: "none",
                   }}
                   draggable={false}
+                  priority
                 />
               </div>
               {/* Câmera */}

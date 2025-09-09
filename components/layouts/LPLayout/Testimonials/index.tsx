@@ -25,6 +25,7 @@ export default function Testimonials() {
                   width={180}
                   height={180}
                   className="object-cover object-center rounded-full"
+                  priority
                 />
               </div>
 

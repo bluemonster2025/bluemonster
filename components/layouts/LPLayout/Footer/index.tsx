@@ -17,6 +17,7 @@ export const Footer = () => {
               alt="Bluemonster"
               src="/images/logos/logo-branco.svg"
               style={{ objectFit: "contain" }}
+              priority
             />
           </Link>
           <div className="grid gap-1 grid-cols-1">

@@ -113,10 +113,11 @@ export default function PromoModal() {
           <div className="relative w-[85%] max-w-sm">
             {/* Imagem de fundo */}
             <Image
-              src="/images/pictures/Pop-Up mobile.png" // coloque a imagem em public/
+              src="/images/pictures/Pop-Up mobile.png"
               alt="Promoção"
               width={400}
               height={800}
+              priority
             />
 
             {/* Botão Fechar */}

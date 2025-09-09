@@ -42,6 +42,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Aumento de visibilidade de produtos"
+            priority
           />
         ),
         title: "Aumento de visibilidade de produtos",
@@ -55,6 +56,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Autoridade de Marca"
+            priority
           />
         ),
         title: "Autoridade de Marca",
@@ -68,6 +70,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Vendas Online"
+            priority
           />
         ),
         title: "Vendas Online",
@@ -81,6 +84,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Autonomia"
+            priority
           />
         ),
         title: "Autonomia",
@@ -131,6 +135,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Aumento de visibilidade de serviços"
+            priority
           />
         ),
         title: "Aumento de visibilidade de serviços",
@@ -144,6 +149,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Autoridade e credibilidade"
+            priority
           />
         ),
         title: "Autoridade e credibilidade",
@@ -157,6 +163,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Mais clientes, mais negócios"
+            priority
           />
         ),
         title: "Mais clientes, mais negócios",
@@ -170,6 +177,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Menor custo"
+            priority
           />
         ),
         title: "Menor custo",
@@ -217,6 +225,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Engaje audiência"
+            priority
           />
         ),
         title: "Engaje audiência",
@@ -230,6 +239,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Autoridade e credibilidade"
+            priority
           />
         ),
         title: "Autoridade e credibilidade",
@@ -243,6 +253,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Apareça nas buscas do google"
+            priority
           />
         ),
         title: "Apareça nas buscas do google",
@@ -256,6 +267,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Monetize seu conteúdo"
+            priority
           />
         ),
         title: "Monetize seu conteúdo",
@@ -305,6 +317,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Credibilidade"
+            priority
           />
         ),
         title: "Credibilidade",
@@ -318,6 +331,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Mais visibilidade"
+            priority
           />
         ),
         title: "Mais visibilidade",
@@ -331,6 +345,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Mais oportunidades de negócio"
+            priority
           />
         ),
         title: "Mais oportunidades de negócio",
@@ -344,6 +359,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Fortalecimento da marca"
+            priority
           />
         ),
         title: "Fortalecimento da marca",
@@ -386,6 +402,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Mais praticidade para o cliente"
+            priority
           />
         ),
         title: "Mais praticidade para o cliente",
@@ -399,6 +416,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Atualizações rápidas e simples"
+            priority
           />
         ),
         title: "Atualizações rápidas e simples",
@@ -412,6 +430,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Experiência moderna e atrativa"
+            priority
           />
         ),
         title: "Experiência moderna e atrativa",
@@ -425,6 +444,7 @@ export const tabs = [
             width={32}
             height={32}
             alt="Menor custo"
+            priority
           />
         ),
         title: "Menor custo",

@@ -8,6 +8,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Idendidade & Branding"
+        priority
       />
     ),
     title: "Idendidade & Branding",
@@ -21,6 +22,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Design Digital (UX/UI)"
+        priority
       />
     ),
     title: "Design Digital (UX/UI)",
@@ -34,6 +36,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Desenvolvimento Web Responsivo"
+        priority
       />
     ),
     title: "Desenvolvimento Web Responsivo",
@@ -47,6 +50,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Otimização de SEO"
+        priority
       />
     ),
     title: "Otimização de SEO",
@@ -60,6 +64,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Redesign / Refatoração"
+        priority
       />
     ),
     title: "Redesign / Refatoração",
@@ -73,6 +78,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Consultoria digital"
+        priority
       />
     ),
     title: "Consultoria digital",
@@ -86,6 +92,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Registro da marca + Dominio"
+        priority
       />
     ),
     title: "Registro da marca + Dominio",
@@ -99,6 +106,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Hospedagem"
+        priority
       />
     ),
     title: "Hospedagem",
@@ -112,6 +120,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="E-mail corporativo"
+        priority
       />
     ),
     title: "E-mail corporativo",
@@ -125,6 +134,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Google Ads"
+        priority
       />
     ),
     title: "Google Ads",
@@ -138,6 +148,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Indicadores"
+        priority
       />
     ),
     title: "Indicadores",
@@ -151,6 +162,7 @@ export const listCardsServices = [
         width={32}
         height={32}
         alt="Manutenção e acompanhamento"
+        priority
       />
     ),
     title: "Manutenção e acompanhamento",
@@ -167,6 +179,7 @@ export const listCardsExclusiveWebsites = [
         width={32}
         height={32}
         alt="Design exclusivo para cada site."
+        priority
       />
     ),
     title: "Design exclusivo para cada site.",
@@ -180,6 +193,7 @@ export const listCardsExclusiveWebsites = [
         width={32}
         height={32}
         alt="Tecnologia premium"
+        priority
       />
     ),
     title: "Tecnologia premium",
@@ -193,6 +207,7 @@ export const listCardsExclusiveWebsites = [
         width={32}
         height={32}
         alt="Loja virtual"
+        priority
       />
     ),
     title: "Loja virtual",
@@ -206,6 +221,7 @@ export const listCardsExclusiveWebsites = [
         width={32}
         height={32}
         alt="Otimização de SEO"
+        priority
       />
     ),
     title: "Otimização de SEO",

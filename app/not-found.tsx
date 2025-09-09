@@ -32,6 +32,7 @@ export default function NotFound() {
               alt="404 Monster"
               fill
               className="object-contain"
+              priority
             />
           </div>
         </div>
