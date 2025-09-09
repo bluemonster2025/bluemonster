@@ -187,7 +187,7 @@ export default function Modalities() {
 
         {/* Ideal para */}
         <div className="flex flex-col gap-4 mb-6">
-          <Title as="h3" className="text-2xl font-semibold text-grayscale-400">
+          <Title as="h2" className="text-2xl font-semibold text-grayscale-400">
             Ideal para
           </Title>
           <Text className="text-grayscale-300 text-sm">{currentTab.ideal}</Text>
@@ -206,7 +206,7 @@ export default function Modalities() {
 
         {/* Benefícios */}
         <div className="flex flex-col gap-8">
-          <Title as="h3" className="text-2xl font-semibold text-grayscale-400">
+          <Title as="h2" className="text-2xl font-semibold text-grayscale-400">
             {currentTab.benefitsTitle}
           </Title>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

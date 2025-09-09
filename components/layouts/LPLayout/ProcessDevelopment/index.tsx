@@ -73,7 +73,7 @@ function StepCard({ step }: { step: (typeof steps)[0] }) {
           <Text className="text-white font-semibold text-base">{step.id}</Text>
         </div>
         <div className="flex flex-col gap-4">
-          <Title as="h3" className="font-semibold text-grayscale-400 text-sm">
+          <Title as="h2" className="font-semibold text-grayscale-400 text-sm">
             {step.title}
           </Title>
           <Text className="text-xs text-grayscale-300">{step.description}</Text>
