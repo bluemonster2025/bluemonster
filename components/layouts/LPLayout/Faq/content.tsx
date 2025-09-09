@@ -1,26 +1,27 @@
 export const faqList = [
   {
-    title: "Quais custos adicionais meu site terá?",
+    title: "O site vai funcionar em qualquer dispositivo?",
     answer:
-      "Os sites contam com um custo de domínio e hospedagem com uma média de preço de R$25,00/mês.",
+      "Sim. O layout é responsivo e se adapta automaticamente a celulares, tablets e computadores.",
   },
   {
-    title: "Qual o prazo de entrega?",
+    title: "Qual é a forma de pagamento do projeto?",
     answer:
-      "Trabalhamos de forma otimizada, os sites levam de 2 a 4 semanas em média para estarem prontos.",
+      "Você pode pagar à vista com desconto especial ou parcelar em até 10x no boleto ou cartão de crédito.",
   },
   {
-    title: "Posso parcelar o pagamento?",
+    title: "Posso editar meus produtos sozinho?",
     answer:
-      "Sim, você pode parcelar o pagamento até 10x sem juros no boleto ou no cartão de crédito.",
+      "Sim, oferecemos o serviço de gerenciamento do sites nativo da Bluemonster que permite você adicionar, editar ou remover produtos e conteúdos de forma autônoma.",
   },
   {
-    title: "Terei suporte depois que o site estiver pronto?",
-    answer: "Sim, você terá acesso ao suporte durante 1 ano sem custo.",
+    title: "Tenho suporte técnico após a entrega?",
+    answer:
+      "Você terá 1 ano de suporte de forma gratuita para qualquer problema com seu site. Após esse período, você poderá contratar nosso serviço de suporte mensalmente. ",
   },
   {
-    title: "Como eu atualizo meus produtos do e-commerce?",
+    title: "Vocês fazem cadastro de produtos para e-commerces?",
     answer:
-      "Os E-commerces contam com a opção de assinatura do sistema de gerenciamento de sites da blue monster, lá o cliente terá autonomia para adicionar, editar e excluir seus produtos.",
+      "Sim, caso não queira cadastrar, oferecemos serviço de cadastro de itens além de tratamento de imagens de produto.",
   },
 ];

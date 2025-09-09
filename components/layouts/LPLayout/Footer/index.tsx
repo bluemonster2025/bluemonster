@@ -4,7 +4,7 @@ import { Section } from "@/components/elements/Section";
 import { Text } from "@/components/elements/Texts";
 import Image from "next/image";
 import Link from "next/link";
-import { Contact } from "../Contact";
+import { WhatsAppButton } from "@/components/elements/WhatsAppButton";
 
 export const Footer = () => {
   return (
@@ -28,7 +28,7 @@ export const Footer = () => {
             </LinkExternal> */}
             <LinkExternal
               className="h-10 w-10 flex items-center justify-center rounded bg-white"
-              href="/"
+              href="https://www.instagram.com/bluemonster.com.br"
             >
               <Icon name="FaInstagram" color="#687af6" size={16} />
             </LinkExternal>
@@ -38,22 +38,25 @@ export const Footer = () => {
       <Section className="bg-purplescale-50">
         <div className="hidden md:flex lg:items-center justify-between py-4">
           <div className="lg:pr-20">
+            <Text className="text-white text-left text-base/[24px] font-semibold">
+              <div>Transforme sua ideia em um site hoje mesmo 🚀</div>
+            </Text>
             <Text className="text-white text-left text-base/[24px] font-light">
-              <div>Nós ligamos para você</div>
               <div>
-                Está sem tempo? Não se preocupe, nossa equipe entra em contato
-                com você!
+                Entre em contato conosco e solicite um orçamento para o seu
+                projeto.
               </div>
             </Text>
           </div>
 
-          <div className="lg:flex lg:items-center justify-between py-4">
-            <Contact />
+          {/* Botão WhatsApp */}
+          <div className="w-full md:w-[230px]">
+            <WhatsAppButton title="Solicitar orçamento" variant="secondary" />
           </div>
         </div>
       </Section>
       <Section>
-        <Text className="text-center lg:text-left py-4 md:py-8 text-sm/[24px] text-grayscale-400 w-full h-full font-normal">
+        <Text className="text-center lg:text-left py-4 text-sm/[24px] text-grayscale-400 w-full h-full font-normal">
           ©2025 Todos os direitos reservados bluemonster.com.br
         </Text>
       </Section>

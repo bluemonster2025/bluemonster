@@ -110,7 +110,7 @@ export default function PromoModal() {
 
       <div className="block lg:hidden">
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
-          <div className="relative w-[90%] max-w-sm">
+          <div className="relative w-[85%] max-w-sm">
             {/* Imagem de fundo */}
             <Image
               src="/images/pictures/Pop-Up mobile.png" // coloque a imagem em public/

@@ -30,8 +30,7 @@ export function LPTemplate() {
           <ListCards listCards={listCardsExclusiveWebsites} />
         </div>
         <Text className="text-base/[24px] text-grayscale-300 normal-case bg-[#F9F9F9] p-4">
-          Pagamento facilitado em até 10x sem juros no boleto ou cartão de
-          crédito.
+          Pagamento facilitado em até 10x no boleto ou cartão de crédito.
         </Text>
       </Section>
       <Modalities />
