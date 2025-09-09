@@ -37,7 +37,7 @@ export const Footer = () => {
         </div>
       </Section>
       <Section className="bg-purplescale-50">
-        <div className="hidden md:flex lg:items-center justify-between py-4">
+        <div className="hidden md:flex lg:items-center justify-between py-8">
           <div className="lg:pr-20">
             <Text className="text-white text-left text-base/[24px] font-semibold">
               <div>Transforme sua ideia em um site hoje mesmo 🚀</div>

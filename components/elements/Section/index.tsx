@@ -21,8 +21,9 @@ export const Section = ({
   noPadding = false,
 }: Props) => {
   const getClass = () =>
-    `${!noPadding && "px-5"} w-full max-w-6xl 3xl:max-w-[100rem] mx-auto`;
-
+    `${
+      !noPadding && "px-5"
+    } w-full max-w-6xl xl:max-w-[90rem] 1xl:max-w-[100rem] 2xl:max-w-[90rem] 3xl:max-w-[100rem] mx-auto`;
   return (
     <Tag id={id} className={className}>
       <div className={getClass()}>

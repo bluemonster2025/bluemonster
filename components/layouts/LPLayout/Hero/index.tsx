@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center text-left gap-8">
           <Title
             as="h1"
-            className="text-grayscale-400 font-bold text-[32px]/[normal] md:text-[25px] lg:text-[36px] xl:text-[40px] 3xl:text-[56px] lg:pb-5"
+            className="text-grayscale-400 font-bold text-[32px]/[normal] md:text-[25px] lg:text-[36px] xl:text-[45px] 1xl:text-[55px] 3xl:text-[56px] lg:pb-5"
           >
             <div className="hidden md:flex justify-start mb-0">
               Aumente suas&nbsp;<TextHighlight>vendas&nbsp;</TextHighlight>com
@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
 
         <div className="relative flex items-end flex-col justify-end">
-          <div className="relative py-[55%] md:py-[41%] w-full top-[-1rem] md:top-11 lg:top-16">
+          <div className="relative py-[55%] 1xl:py-[31%] md:py-[41%] w-full top-[-1rem] md:top-11 lg:top-16">
             <Image
               fill
               className="object-scale-down"
