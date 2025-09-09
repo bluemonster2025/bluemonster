@@ -60,7 +60,7 @@ export default function Hero() {
             <Image
               fill
               className="object-scale-down"
-              src="/images/pictures/monster.svg"
+              src="/images/pictures/monster.png"
               alt="Blue Monster"
               style={{
                 objectFit: "contain",

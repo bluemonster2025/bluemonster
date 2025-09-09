@@ -28,7 +28,7 @@ export default function NotFound() {
 
           <div className="relative w-full py-[66%] lg:py-[33%]">
             <Image
-              src="/images/pictures/404.svg"
+              src="/images/pictures/404.png"
               alt="404 Monster"
               fill
               className="object-contain"
