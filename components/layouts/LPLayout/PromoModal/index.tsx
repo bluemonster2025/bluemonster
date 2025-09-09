@@ -111,14 +111,17 @@ export default function PromoModal() {
       <div className="block lg:hidden">
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
           <div className="relative w-[85%] max-w-sm">
-            {/* Imagem de fundo */}
-            <Image
-              src="/images/pictures/Pop-Up mobile.png"
-              alt="Promoção"
-              width={400}
-              height={800}
-              priority
-            />
+            {/* Imagem de fundo responsiva */}
+            <div className="relative w-full">
+              <Image
+                src="/images/pictures/Pop-Up mobile.png"
+                alt="Promoção"
+                width={2000} // dimensões reais da imagem
+                height={3925}
+                style={{ width: "100%", height: "auto" }} // mantém proporção
+                priority
+              />
+            </div>
 
             {/* Botão Fechar */}
             <button
