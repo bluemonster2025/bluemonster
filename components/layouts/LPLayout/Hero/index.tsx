@@ -12,7 +12,7 @@ export default function Hero() {
   // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Section className="bg-grayscale-50 pt-16 md:pt-0 mb-[11rem] md:mb-[5rem] max-h-[33rem] md:max-h-[30rem] 3xl:max-h-[40rem] md:h-full">
+    <Section className="bg-grayscale-50 pt-16 md:pt-0 mb-0 md:mb-[5rem] max-h-[33rem] md:max-h-[30rem] 3xl:max-h-[40rem] md:h-full">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-5">
         <div className="flex flex-col justify-center text-left gap-8">
           <Title
@@ -55,24 +55,15 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative flex items-end flex-col justify-end">
-          <div className="relative py-[55%] md:py-[41%] 2xl:py-[31%] w-full top-[-1rem] md:top-11 lg:top-16">
-            {/* <Image
-              fill
-              className="object-scale-down"
-              src="/images/pictures/monster.webp"
-              alt="Blue Monster"
-              style={{ objectFit: "contain" }}
-            /> */}
-
-            <Image
-              className="object-scale-down"
-              src="/images/pictures/monster.webp"
-              alt="Blue Monster"
-              fill
-              sizes="(max-width: 768px) 100vw, 400px"
-            />
-          </div>
+        <div className="relative w-full h-[351px] md:h-[400px] lg:h-[500px]">
+          <Image
+            src="/images/pictures/monster.webp"
+            alt="Blue Monster"
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+            priority
+          />
         </div>
       </div>
     </Section>

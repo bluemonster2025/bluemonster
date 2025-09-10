@@ -22,7 +22,7 @@ export function LPTemplate() {
       <PromoModal />
       <Hero />
       <Section
-        className="pb-18"
+        className="pb-18 xs:pt-64 1xs:pt-60 2xs:pt-54 3xs:pt-40 md:pt-0"
         title="Sites exclusivos e gerenciáveis"
         subtitle="Mais de 90% de possíveis clientes pesquisam sobre seus serviços no Google, não perca a chance de turbinar o seu faturamento com um site otimizado para gerar vendas."
       >

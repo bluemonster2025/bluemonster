@@ -29,7 +29,7 @@ export default function PromoModal() {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[33%] xl:h-[67%] 2xl:h-[60%] 3xl:h-[50%] 4xl:h-[36%]"
+            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[77%] xl:h-[73%] 1xl:h-[59%]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botão de fechar */}
@@ -127,7 +127,7 @@ export default function PromoModal() {
       <div className="block lg:hidden">
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
           <div className="relative w-[85%] max-w-[21rem]">
-            <div className="relative w-full xs:h-[608px] h-[640px]">
+            <div className="relative w-full xs:h-[550px] h-[640px]">
               <Image
                 src="/images/pictures/Pop-Up mobile.png"
                 alt="Promoção"
@@ -140,8 +140,7 @@ export default function PromoModal() {
               {/* Botão Fechar */}
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute z-20 text-white text-[40px]"
-                style={{ top: "0%", right: "6%" }}
+                className="absolute z-20 text-white text-[40px] top-[0%] xs:right-[6%] 1xs:right-[12%]"
               >
                 ×
               </button>
