@@ -21,11 +21,12 @@
   --color-bluescale-50: #c1d4e4;
 
   /* Breakpoints */
+  --breakpoint-xs: 320px;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1536px;
+  --breakpoint-2xl: 1500px;
   --breakpoint-1xl: 1700px;
   --breakpoint-3xl: 1900px;
   --breakpoint-4xl: 2300px;

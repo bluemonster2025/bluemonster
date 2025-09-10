@@ -26,7 +26,7 @@ export function LPTemplate() {
         title="Sites exclusivos e gerenciáveis"
         subtitle="Mais de 90% de possíveis clientes pesquisam sobre seus serviços no Google, não perca a chance de turbinar o seu faturamento com um site otimizado para gerar vendas."
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-4 mb-12">
           <ListCards listCards={listCardsExclusiveWebsites} />
         </div>
         <Text className="text-base/[24px] text-grayscale-300 normal-case bg-[#F9F9F9] p-4">

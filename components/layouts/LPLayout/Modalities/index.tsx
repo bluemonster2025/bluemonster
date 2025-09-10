@@ -209,7 +209,7 @@ export default function Modalities() {
           <Title as="h2" className="text-2xl font-semibold text-grayscale-400">
             {currentTab.benefitsTitle}
           </Title>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
             <ListCards listCards={currentTab.benefits} />
           </div>
           <div className="w-full md:w-[360px]">

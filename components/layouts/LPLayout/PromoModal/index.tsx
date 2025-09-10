@@ -111,9 +111,9 @@ export default function PromoModal() {
       {/* MOBILE */}
       <div className="block lg:hidden">
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
-          <div className="relative w-[85%] max-w-sm">
+          <div className="relative w-[85%] max-w-[21rem]">
             {/* Imagem de fundo responsiva */}
-            <div className="relative w-full h-[640px]">
+            <div className="relative w-full xs:h-[608px] h-[640px]">
               <Image
                 src="/images/pictures/Pop-Up mobile.png"
                 alt="Promoção"
@@ -122,10 +122,14 @@ export default function PromoModal() {
                 priority
               />
 
-              {/* Botão Fechar */}
+              {/* Botão Fechar (fixo dentro da imagem) */}
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-3 right-3 text-white text-[40px] z-20"
+                className="absolute z-20 text-white text-[40px]"
+                style={{
+                  top: "0%", // posição relativa à altura da imagem
+                  right: "6%", // posição relativa à largura da imagem
+                }}
               >
                 ×
               </button>
