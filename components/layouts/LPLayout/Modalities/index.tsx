@@ -163,10 +163,12 @@ export default function Modalities() {
                   src={currentTab.image}
                   alt={currentTab.label}
                   fill
-                  sizes="(max-width: 768px) 100vw, 600px"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 
+         (max-width: 1024px) 714px, 
+         1024px"
                   style={{ objectFit: "contain", pointerEvents: "none" }}
                   draggable={false}
-                  priority
                 />
               </div>
               {/* Câmera */}

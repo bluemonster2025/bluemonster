@@ -110,14 +110,15 @@ export default function PromoModal() {
 
             {/* Mascote */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <Image
-                src="/images/pictures/monster-popup.webp"
-                alt="Bluemonster"
-                width={421}
-                height={421}
-                sizes="(max-width: 768px) 200px, 421px"
-                priority
-              />
+              <div className="relative w-[421px] h-[421px] md:w-[421px] md:h-[421px] mx-auto">
+                <Image
+                  src="/images/pictures/monster-popup.webp"
+                  alt="Bluemonster"
+                  fill
+                  sizes="(max-width: 768px) 200px, 421px"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
