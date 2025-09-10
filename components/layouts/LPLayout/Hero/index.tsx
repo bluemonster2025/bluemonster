@@ -55,15 +55,17 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative w-full h-[351px] md:h-[400px] lg:h-[500px]">
-          <Image
-            src="/images/pictures/monster.webp"
-            alt="Blue Monster"
-            fill
-            className="object-contain"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-            priority
-          />
+        <div className="relative flex items-end flex-col justify-end">
+          <div className="relative py-[55%] md:py-[41%] 2xl:py-[31%] w-full top-[-1rem] md:top-11 lg:top-16">
+            <Image
+              className="object-scale-down"
+              src="/images/pictures/monster.webp"
+              alt="Blue Monster"
+              fill
+              sizes="(max-width: 768px) 100vw, 400px"
+              priority
+            />
+          </div>{" "}
         </div>
       </div>
     </Section>
