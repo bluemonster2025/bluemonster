@@ -57,7 +57,7 @@ export default function Hero() {
 
         <div className="relative flex items-end flex-col justify-end">
           <div className="relative py-[55%] md:py-[41%] 2xl:py-[31%] w-full top-[-1rem] md:top-11 lg:top-16">
-            <div className="hidden lg:block">
+            <div className="hidden md:block">
               <Image
                 className="object-scale-down"
                 src="/images/pictures/monster_.webp"
@@ -67,7 +67,7 @@ export default function Hero() {
                 priority
               />
             </div>
-            <div className="block lg:hidden">
+            <div className="block md:hidden">
               <Image
                 className="object-scale-down"
                 src="/images/pictures/monster.webp"

@@ -29,7 +29,7 @@ export default function PromoModal() {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[77%] xl:h-[73%] 1xl:h-[59%]"
+            className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[77%] xl:h-[66%] 1xl:h-[49%]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botão de fechar */}
