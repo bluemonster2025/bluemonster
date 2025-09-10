@@ -373,7 +373,7 @@ export const tabs = [
     label: "CARDÁPIO DIGITAL",
     descriptionStart:
       "O cardápio online da Bluemonster coloca seus pratos no celular do cliente, com fotos atrativas e com integração com seu sistema de comandas. Moderno, fácil de atualizar e pronto para fornecer um melhor atendimento à seus clientes.",
-    image: "/images/pictures/garfo.webp",
+    image: "/images/pictures/rockbar.webp",
     idealFor: [
       "Bares",
       "Restaurantes",
