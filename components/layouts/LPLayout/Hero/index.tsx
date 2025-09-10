@@ -57,15 +57,27 @@ export default function Hero() {
 
         <div className="relative flex items-end flex-col justify-end">
           <div className="relative py-[55%] md:py-[41%] 2xl:py-[31%] w-full top-[-1rem] md:top-11 lg:top-16">
-            <Image
-              className="object-scale-down"
-              src="/images/pictures/monster.webp"
-              alt="Blue Monster"
-              fill
-              sizes="(max-width: 768px) 100vw, 400px"
-              priority
-            />
-          </div>{" "}
+            <div className="hidden lg:block">
+              <Image
+                className="object-scale-down"
+                src="/images/pictures/monster_.webp"
+                alt="Blue Monster"
+                fill
+                sizes="(max-width: 768px) 100vw, 400px"
+                priority
+              />
+            </div>
+            <div className="block lg:hidden">
+              <Image
+                className="object-scale-down"
+                src="/images/pictures/monster.webp"
+                alt="Blue Monster"
+                fill
+                sizes="(max-width: 768px) 100vw, 400px"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </div>
     </Section>
