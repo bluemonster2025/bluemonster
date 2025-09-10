@@ -47,6 +47,7 @@ export default function PromoModal() {
                 alt="Promoção fundo azul"
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: "cover" }}
               />
