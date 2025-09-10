@@ -130,7 +130,7 @@ export default function PromoModal() {
           <div className="relative w-[85%] max-w-[21rem]">
             <div className="relative w-full xs:h-[550px] h-[640px]">
               <Image
-                src="/images/pictures/Pop-Up mobile.png"
+                src="/images/pictures/Pop-Up mobile.webp"
                 alt="Promoção"
                 fill
                 style={{ objectFit: "contain" }}
