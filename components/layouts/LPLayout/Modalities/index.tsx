@@ -162,14 +162,9 @@ export default function Modalities() {
                 <Image
                   src={currentTab.image}
                   alt={currentTab.label}
-                  width={naturalSize?.w || frameSize.w} // largura real ou do frame
-                  height={naturalSize?.h || frameSize.h} // altura real ou do frame
-                  style={{
-                    display: "block",
-                    width: "100%",
-                    height: "auto",
-                    pointerEvents: "none",
-                  }}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 600px"
+                  style={{ objectFit: "contain", pointerEvents: "none" }}
                   draggable={false}
                   priority
                 />
