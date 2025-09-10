@@ -9,7 +9,7 @@ export const tabs = [
     descriptionEnd: "transformam sua loja em uma vitrine aberta 24h.",
     extra: "\nAumente suas vendas de forma prática, segura e profissional.",
 
-    image: "/images/pictures/ncell.png",
+    image: "/images/pictures/ncell.webp",
     ideal:
       "Ideal para empresas que desejam aumentar a visibilidade e venda de produtos.",
     benefitsTitle: "Benefícios de ter um e-commerce",
@@ -101,7 +101,7 @@ export const tabs = [
     highlightWord: "Google,",
     descriptionEnd:
       "além de aumentar a credibilidade da sua marca e destacar seus serviços de forma clara e profissional.",
-    image: "/images/pictures/engebee.png",
+    image: "/images/pictures/engebee.webp",
     ideal:
       "Ideal para empresas e profissionais que desejam aumentar a visibilidade de seus serviços.",
     benefitsTitle: "Benefícios de ter uma landing page",
@@ -193,7 +193,7 @@ export const tabs = [
       "O blog serve para profissionais que buscam ser referência em um assunto por meio de conteúdos digitais.",
     descriptionEnd:
       "\nSe você gosta de escrever artigos e deseja compartilhar conhecimento esse é o módulo perfeito para você.",
-    image: "/images/pictures/garfo.png",
+    image: "/images/pictures/garfo.webp",
     idealFor: [
       "Crítica de cinema",
       "Crítica de restaurante",
@@ -283,7 +283,7 @@ export const tabs = [
       "Um site institucional apresenta sua empresa de forma profissional, fortalece sua marca e transmite confiança, sendo um cartão de visitas digital que gera oportunidades.",
     descriptionEnd:
       "\nDiferente das outras modalidades, os sites intitucionais contam com uma quantidade maior de informação divida por páginas e assuntos.",
-    image: "/images/pictures/garfo.png",
+    image: "/images/pictures/garfo.webp",
     idealFor: [
       "Startups",
       "Bancos e Fintechs",
@@ -373,7 +373,7 @@ export const tabs = [
     label: "CARDÁPIO DIGITAL",
     descriptionStart:
       "O cardápio online da Bluemonster coloca seus pratos no celular do cliente, com fotos atrativas e com integração com seu sistema de comandas. Moderno, fácil de atualizar e pronto para fornecer um melhor atendimento à seus clientes.",
-    image: "/images/pictures/garfo.png",
+    image: "/images/pictures/garfo.webp",
     idealFor: [
       "Bares",
       "Restaurantes",

@@ -22,85 +22,99 @@ export default function PromoModal() {
 
   return (
     <>
+      {/* DESKTOP */}
       <div className="hidden lg:block">
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 "
-          onClick={() => setIsOpen(false)} // fecha ao clicar no fundo
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+          onClick={() => setIsOpen(false)}
         >
           <div
             className="relative w-full max-w-[1087px] bg-white overflow-hidden flex flex-col md:flex-row lg:h-[33%] xl:h-[67%] 2xl:h-[60%] 3xl:h-[50%] 4xl:h-[36%]"
-            onClick={(e) => e.stopPropagation()} // impede fechar ao clicar dentro
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Botão de fechar */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl z-2"
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl z-20"
             >
               ×
             </button>
 
             {/* Parte Esquerda (Imagem de Fundo 1) */}
-            <div
-              className="w-full md:w-1/2 text-white p-8 flex flex-col justify-center relative bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/images/pictures/bg-popup-azul.png')",
-              }}
-            >
-              <Text className="absolute -left-24 top-[45%] -rotate-90 text-2xl tracking-widest bg-white p-2 text-purplescale-50 font-bold">
-                todos os sites com
-              </Text>
-              <div className="max-w-[20rem] mx-auto z-2">
-                <Title
-                  as="h2"
-                  className={`text-[221px]/[185px] font-extrabold ${bebas_neue.className}`}
-                >
-                  30%
-                </Title>
+            <div className="w-full md:w-1/2 text-white p-8 flex flex-col justify-center relative">
+              <Image
+                src="/images/pictures/bg-popup-azul.webp"
+                alt="Promoção fundo azul"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+              />
 
-                <Text
-                  className={`text-[41px]/[34px] uppercase ${bebas_neue.className}`}
-                >
-                  de desconto
+              <div className="relative z-10">
+                <Text className="absolute -left-24 top-[45%] -rotate-90 text-2xl tracking-widest bg-white p-2 text-purplescale-50 font-bold">
+                  todos os sites com
                 </Text>
-                <Text className="mt-4 text-[15px]">
-                  <strong>A hora é agora! </strong>Garanta seu site antes
-                </Text>
-                <Text className="text-[15px]">que a promoção acabe.</Text>
+                <div className="max-w-[20rem] mx-auto">
+                  <Title
+                    as="h2"
+                    className={`text-[221px]/[185px] font-extrabold ${bebas_neue.className}`}
+                  >
+                    30%
+                  </Title>
+
+                  <Text
+                    className={`text-[41px]/[34px] uppercase ${bebas_neue.className}`}
+                  >
+                    de desconto
+                  </Text>
+                  <Text className="mt-4 text-[15px]">
+                    <strong>A hora é agora! </strong>Garanta seu site antes
+                  </Text>
+                  <Text className="text-[15px]">que a promoção acabe.</Text>
+                </div>
               </div>
             </div>
 
             {/* Parte Direita (Imagem de Fundo 2) */}
-            <div
-              className="w-full md:w-1/2 pl-[14rem] p-8 flex flex-col justify-center text-center md:text-left relative bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/images/pictures/bg-popup-branco.png')",
-              }}
-            >
-              <div className={`text-[57px]/[45px] ${bebas_neue.className}`}>
-                <Title as="h2" className="mb-2 uppercase">
-                  Não <TextHighlight>perca </TextHighlight>essa{" "}
-                </Title>
-                <TextHighlight>Chance!</TextHighlight>
+            <div className="w-full md:w-1/2 pl-[14rem] p-8 flex flex-col justify-center text-center md:text-left relative">
+              <Image
+                src="/images/pictures/bg-popup-branco.png"
+                alt="Promoção fundo branco"
+                fill
+                priority
+                fetchPriority="high"
+                style={{ objectFit: "cover" }}
+              />
 
-                <Text className="mt-2 text-sm text-grayscale-300">
-                  Desconto imperdível!
-                </Text>
-              </div>
-              <div className="w-full md:w-[230px] mt-4">
-                <WhatsAppButton
-                  title="Solicite um orçamento"
-                  variant="primary"
-                />
+              <div className="relative z-10">
+                <div className={`text-[57px]/[45px] ${bebas_neue.className}`}>
+                  <Title as="h2" className="mb-2 uppercase">
+                    Não <TextHighlight>perca </TextHighlight>essa{" "}
+                  </Title>
+                  <TextHighlight>Chance!</TextHighlight>
+
+                  <Text className="mt-2 text-sm text-grayscale-300">
+                    Desconto imperdível!
+                  </Text>
+                </div>
+                <div className="w-full md:w-[230px] mt-4">
+                  <WhatsAppButton
+                    title="Solicite um orçamento"
+                    variant="primary"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Mascote */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
               <Image
-                src="/images/pictures/monster-popup.png"
+                src="/images/pictures/monster-popup.webp"
                 alt="Bluemonster"
                 width={421}
                 height={421}
+                sizes="(max-width: 768px) 200px, 421px"
                 priority
               />
             </div>
@@ -112,7 +126,6 @@ export default function PromoModal() {
       <div className="block lg:hidden">
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
           <div className="relative w-[85%] max-w-[21rem]">
-            {/* Imagem de fundo responsiva */}
             <div className="relative w-full xs:h-[608px] h-[640px]">
               <Image
                 src="/images/pictures/Pop-Up mobile.png"
@@ -120,16 +133,14 @@ export default function PromoModal() {
                 fill
                 style={{ objectFit: "contain" }}
                 priority
+                fetchPriority="high"
               />
 
-              {/* Botão Fechar (fixo dentro da imagem) */}
+              {/* Botão Fechar */}
               <button
                 onClick={() => setIsOpen(false)}
                 className="absolute z-20 text-white text-[40px]"
-                style={{
-                  top: "0%", // posição relativa à altura da imagem
-                  right: "6%", // posição relativa à largura da imagem
-                }}
+                style={{ top: "0%", right: "6%" }}
               >
                 ×
               </button>
