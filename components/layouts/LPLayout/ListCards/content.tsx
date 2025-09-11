@@ -7,11 +7,11 @@ export const listCardsServices = [
         src="/images/icons/icon-identity-branding.svg"
         width={32}
         height={32}
-        alt="Idendidade & Branding"
+        alt="Identidade & Branding"
         priority
       />
     ),
-    title: "Idendidade & Branding",
+    title: "Identidade & Branding",
     description:
       "Criação de logotipo, identidade visual e manuais de marca que fortalecem a imagem do seu negócio.",
   },

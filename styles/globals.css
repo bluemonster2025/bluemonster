@@ -35,6 +35,10 @@
   --breakpoint-4xl: 2300px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
