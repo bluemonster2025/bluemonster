@@ -5,12 +5,14 @@ import { Section } from "@/components/elements/Section";
 import Link from "next/link";
 import Image from "next/image";
 import { links } from "./context";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const [hash, setHash] = useState("");
 
+  // Atualiza hash quando a URL muda
   useEffect(() => {
     const updateHash = () => setHash(window.location.hash);
     updateHash();
@@ -18,10 +20,47 @@ export default function Header() {
     return () => window.removeEventListener("hashchange", updateHash);
   }, []);
 
+  // Scroll suave customizado
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const element = document.querySelector(hash);
+    if (!element) return;
+
+    const headerOffset = window.innerWidth >= 1024 ? 96 : 88; // desktop / mobile
+    const targetPosition =
+      element.getBoundingClientRect().top + window.scrollY - headerOffset;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 800; // tempo em ms (quanto maior, mais lento)
+    let startTime: number | null = null;
+
+    const easeInOutQuad = (t: number) =>
+      t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+    const animate = (currentTime: number) => {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+      const ease = easeInOutQuad(progress);
+
+      window.scrollTo(0, startPosition + distance * ease);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [hash]);
+
   return (
     <Section
       asTag="header"
-      className="w-full h-[96px] lg:h-[88px] flex items-center z-50 bg-white"
+      className="md:fixed top-0 left-0 w-full h-[96px] lg:h-[88px] flex items-center z-50 bg-white shadow-md"
     >
       <div className="flex justify-center md:justify-between w-full">
         <div className="md:pt-4 lg:pt-0 flex items-end lg:items-center justify-center lg:justify-between">
@@ -59,11 +98,14 @@ export default function Header() {
               <Link
                 key={href}
                 href={href}
-                onClick={() => {
-                  if (href === "/") {
-                    setHash(""); // Home
-                  } else if (anchor) {
-                    setHash(`#${anchor}`); // âncoras
+                onClick={(e) => {
+                  if (anchor) {
+                    e.preventDefault(); // evita jump instantâneo
+                    setHash(`#${anchor}`);
+                    router.push(`${base}#${anchor}`); // atualiza URL sem recarregar
+                  } else {
+                    setHash("");
+                    router.push(base);
                   }
                 }}
                 className={`hidden md:block ${
